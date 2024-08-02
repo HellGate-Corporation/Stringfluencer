@@ -34,7 +34,7 @@ Stringfluencer is a powerful and flexible Bash script for generating customized 
 1. Download the `stringfluencer.sh` script:
 
    ```
-   curl -O https://raw.githubusercontent.com/yourusername/StringfluencerX/main/StringfluencerX.sh
+   curl -O https://raw.githubusercontent.com/HellGate-Corporation/Stringfluencer/main/stringfluencer.sh
    ```
 
 2. Make the script executable:
@@ -46,7 +46,7 @@ Stringfluencer is a powerful and flexible Bash script for generating customized 
 3. (Optional) Move the script to a directory in your PATH for easy access:
 
    ```
-   sudo mv stringfluencer.sh /usr/local/bin/stringfluencerx
+   sudo mv stringfluencer.sh /usr/local/bin/stringfluencer
    ```
 
 ## Usage
