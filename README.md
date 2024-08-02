@@ -1,6 +1,6 @@
-# StringfluencerX
+# Stringfluencer
 
-StringfluencerX is a powerful and flexible Bash script for generating customized wordlists. It's designed to create lists of random strings with various encoding options, making it ideal for a wide range of applications including security testing, data generation, and more.
+Stringfluencer is a powerful and flexible Bash script for generating customized wordlists. It's designed to create lists of random strings with various encoding options, making it ideal for a wide range of applications including security testing, data generation, and more.
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ StringfluencerX is a powerful and flexible Bash script for generating customized
 
 ## Installation
 
-1. Download the `StringfluencerX.sh` script:
+1. Download the `stringfluencer.sh` script:
 
    ```
    curl -O https://raw.githubusercontent.com/yourusername/StringfluencerX/main/StringfluencerX.sh
@@ -40,13 +40,13 @@ StringfluencerX is a powerful and flexible Bash script for generating customized
 2. Make the script executable:
 
    ```
-   chmod +x StringfluencerX.sh
+   chmod +x stringfluencer.sh
    ```
 
 3. (Optional) Move the script to a directory in your PATH for easy access:
 
    ```
-   sudo mv StringfluencerX.sh /usr/local/bin/stringfluencerx
+   sudo mv stringfluencer.sh /usr/local/bin/stringfluencerx
    ```
 
 ## Usage
@@ -54,13 +54,13 @@ StringfluencerX is a powerful and flexible Bash script for generating customized
 Basic usage:
 
 ```
-./StringfluencerX.sh [OPTIONS]
+./stringfluencer.sh [OPTIONS]
 ```
 
 If you moved the script to your PATH, you can run it from anywhere:
 
 ```
-stringfluencerx [OPTIONS]
+stringfluencer [OPTIONS]
 ```
 
 ## Options
@@ -87,32 +87,32 @@ stringfluencerx [OPTIONS]
 
 1. Generate default wordlist:
    ```
-   ./StringfluencerX.sh
+   ./stringfluencer.sh
    ```
 
 2. Generate 100 strings of length 10 with custom characters:
    ```
-   ./StringfluencerX.sh -l 100 -s 10 -c 'A-Z0-9'
+   ./stringfluencer.sh -l 100 -s 10 -c 'A-Z0-9'
    ```
 
 3. Generate wordlist with custom filename and directory:
    ```
-   ./StringfluencerX.sh -f custom_list.txt -d /path/to/directory
+   ./stringfluencer.sh -f custom_list.txt -d /path/to/directory
    ```
 
 4. Generate wordlist with custom URL prefix and postfix:
    ```
-   ./StringfluencerX.sh -u 'https://example.com/' -p '.html'
+   ./stringfluencer.sh -u 'https://example.com/' -p '.html'
    ```
 
 5. Generate wordlist with base64 encoding of the entire string:
    ```
-   ./StringfluencerX.sh -e64a
+   ./stringfluencer.sh -e64a
    ```
 
 6. Generate wordlist with hexadecimal encoding of the random string:
    ```
-   ./StringfluencerX.sh -0x0s
+   ./stringfluencer.sh -0x0s
    ```
 
 ## Advanced Usage
@@ -122,7 +122,7 @@ stringfluencerx [OPTIONS]
 You can combine multiple encoding options to create complex string patterns. For example:
 
 ```
-./StringfluencerX.sh -e64p -0x0s -e32a
+./stringfluencer.sh -e64p -0x0s -e32a
 ```
 
 This will encode the prefix in Base64, the random string in Hex, and then encode the entire resulting string (including postfix) in Base32.
@@ -132,7 +132,7 @@ This will encode the prefix in Base64, the random string in Hex, and then encode
 The `-c` option allows you to specify custom character sets for generating random strings. You can use ranges or list specific characters:
 
 ```
-./StringfluencerX.sh -c 'A-Za-z0-9!@#$%^&*'
+./stringfluencer.sh -c 'A-Za-z0-9!@#$%^&*'
 ```
 
 This will generate strings using uppercase and lowercase letters, numbers, and the specified special characters.
@@ -165,4 +165,4 @@ Contributions to StringfluencerX are welcome! Please follow these steps:
 
 ## License
 
-StringfluencerX is released under the MIT License. See the LICENSE file for more details.
+Stringfluencer is released under the MIT License. See the LICENSE file for more details.
